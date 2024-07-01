@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('[url=https:/postimages.org/][img]https:/i.postimg.cc/87MDQjYY/logo-white-bkground.webp[/img][/url]/1920x1080]')
+            0'); /* Replace with your background image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(255, 0, 0, 0.7);
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .account-section {
+            background-color: #ffebee;
+            padding: 20px;
+            border-radius: 8px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .account-section input[type="text"], .account-section input[type="password"], .account-section input[type="email"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #d32f2f;
+            border-radius: 4px;
+        }
+        .account-section button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .account-section button:hover {
+            background-color: #b71c1c;
+        }
+        .video-link {
+            color: #d32f2f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .video-link:hover {
+            color: black;
+        }
+        .image-section {
+            text-align: center;
+        }
+        .image-section img {
+            width: 80%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .account-link {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .account-link:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleAccountSection() {
+            var accountSection = document.getElementById('account-section');
+            if (accountSection.style.display === 'none' || accountSection.style.display === '') {
+                accountSection.style.display = 'block';
+            } else {
+                accountSection.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Progress Academy</h1>
+        <p>Your gateway to academic exellence</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="account-link" onclick="toggleAccountSection()">Create Account</a>
+    </nav>
+    <div id="account-section" class="account-section">
+        <h2>Create an Acount</h2>
+        <p>Become a part of Progress Academy today and start your path to succes!</p>
+        <form>
+            <input type="text" placeholder="Username" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="home" class="content">
+            <h2>Home</h2>
+            <p>Welcome to Progress Academy, where we provide top-notch courses to help you ace your 11 Plus exams, GCSEs, as well as Math and English. Our expert tutors and comprehensive materials are designed to suport your academic journey.</p>
+        </div>
+        <div id="about" class="content">
+            <h2>About Us</h2>
+            <p>Progress Academy is commited to delivering high-quality education to students striving for academic success. Our courses are tailored to meet the individual needs of each student, ensuring they achieve their full potential.</p>
+            <div class="image-section">
+                <img src="https://i.postimg.cc/zG3zqBZ6/Headington-School-1.jpg/800x400" alt="School Image">
+            </div>
+            <p>Watch this <a href="https://www.youtube.com/watch?v=uyFNbrTQw_E./800x400" class="video-link">video</a> to learn more about our teaching methods and succes stories.</p>
+        </div>
+        <div id="courses" class="content">
+            <h2>Courses</h2>
+            <p>Our courses cover a range of subjects and exam preparations:</p>
+            <ul>
+                <li>11 Plus Exam Preparation</li>
+                <li>GCSE Exam Preparation</li>
+                <li>Math Tutoring</li>
+                <li>English Tutoring</li>
+            </ul>
+            <p>Join us and excel in your studies with the best resources and guidance.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Progress Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
